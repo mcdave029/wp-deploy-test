@@ -8,17 +8,17 @@ require './config/slack'
 # Setup WordPress
 ############################################
 
-set :wp_user, "yourname" # The admin username
+set :wp_user, "root" # The admin username
 set :wp_email, "yourname@example.com" # The admin email address
-set :wp_sitename, "WP Deploy" # The site title
-set :wp_localurl, "http://wpdeploy" # Your local environment URL
+set :wp_sitename, "The Silent Majority" # The site title
+set :wp_localurl, "http://localhost/wp-deploy-test" # Your local environment URL
 
 ############################################
 # Setup project
 ############################################
 
 set :application, "wp-deploy"
-set :repo_url, "git@github.com:Mixd/wp-deploy.git"
+set :repo_url, "git@github.com:mcdave029/wp-deploy-test.git"
 set :scm, :git
 
 set :git_strategy, SubmoduleStrategy
